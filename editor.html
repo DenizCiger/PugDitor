@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite and Attack Data Editor</title>
+    <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+    <form action="pngInput">
+        <label for="pngInput">Spritesheet:</label>
+        <input type="file" id="pngInput" accept=".png">
+    </form>
+    
+    <form action="jsonInput">
+        <label for="jsonInput">JSON:</label>
+        <input type="file" id="jsonInput" accept=".json">
+    </form>
+
+    
+    <canvas id="canvas" width="1920" height="1080"></canvas>
+
+    <div id="characters"></div>
+    <div id="type"></div>
+    <div id="categories"></div>
+    <div id="items"></div>
+    <div id="data"></div>
+
+    <script src="getFiles.js"></script>
+    <script src="editor.js"></script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+{
+    "general": {
+        "texturePath": "images/Game-Textures/"
+    },
+    "characters": {
+        "Nerd": {
+            "filePath": "Characters/Nerd/",
+            "icon": "nerd.png",
+            "spriteSheet": "Nerd_SpriteSheet.png",
+            "animations": {
+                "movement": {
+                    "idle": {
+                            "frameTime": [ 10, 10, 10, 10, 10 ],
+                            "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "spriteSheetEnd": {
+                                "x": 159,
+                                "y": 47
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                    },
+                    "walk": {
+                            "frameTime": [ 10, 10, 10, 10, 10, 10, 10, 10 ],
+                            "spriteSheetStart": {
+                                "x": 0,
+                                "y": 48
+                            },
+                            "spriteSheetEnd": {
+                                "x": 255,
+                                "y": 95
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                    },
+                    "jump": {
+                            "frameTime": [ 10, 10, 10, 10, 10, 10, 10, 10 ],
+                            "spriteSheetStart": {
+                                "x": 0,
+                                "y": 96
+                            },
+                            "spriteSheetEnd": {
+                                "x": 255,
+                                "y": 143
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                    },
+                    "fall": {
+                            "frameTime": [ 15, 15 ],
+                            "spriteSheetStart": {
+                                "x": 0,
+                                "y": 144
+                            },
+                            "spriteSheetEnd": {
+                                "x": 63,
+                                "y": 191
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                    },
+                    "wallSlide": {
+                            "frameTime": [ 10, 10 ],
+                            "spriteSheetStart": {
+                                "x": 0,
+                                "y": 192
+                            },
+                            "spriteSheetEnd": {
+                                "x": 63,
+                                "y": 239
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                    }
+                },
+                "light": {
+                    "nlight": {
+                            "frameTime": [ 10, 10, 10, 10 ],
+                            "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                    },
+                    "slight": {
+                            "frameTime": [ 10, 10, 10, 10 ],
+                            "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                    },
+                    "dlight": {
+                            "frameTime": [ 10, 10, 10, 10 ],
+                            "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                    },
+                    "ulight": {
+                            "frameTime": [ 10, 10, 10, 10 ],
+                            "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                    }
+                },
+                "air": {
+                    "nair": {
+                        "frameTime": [ 10, 10, 10, 10 ],
+                        "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                        },
+                        "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                        },
+                        "offset": {
+                                "x": 0,
+                                "y": 0
+                        }
+                    },
+                    "sair": {
+                        "frameTime": [ 10, 10, 10, 10 ],
+                        "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                        },
+                        "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                        },
+                        "offset": {
+                                "x": 0,
+                                "y": 0
+                        }
+                    },
+                    "dair": {
+                        "frameTime": [ 10, 10, 10, 10 ],
+                        "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                        },
+                        "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                        },
+                        "offset": {
+                                "x": 0,
+                                "y": 0
+                        }
+                    },
+                    "uair": {
+                        "frameTime": [ 10, 10, 10, 10 ],
+                        "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                        },
+                        "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                        },
+                        "offset": {
+                                "x": 0,
+                                "y": 0
+                        }
+                    }
+                },
+                "heavy": {
+                    "sheavy": {
+                        "frameTime": [ 10, 10, 10, 10 ],
+                        "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                        },
+                        "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                        },
+                        "offset": {
+                                "x": 0,
+                                "y": 0
+                        }
+                    },
+                    "dheavy": {
+                        "frameTime": [ 10, 10, 10, 10 ],
+                        "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                        },
+                        "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                        },
+                        "offset": {
+                                "x": 0,
+                                "y": 0
+                        }
+                    },
+                    "uheavy": {
+                        "frameTime": [ 10, 10, 10, 10 ],
+                        "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                        },
+                        "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                        },
+                        "offset": {
+                                "x": 0,
+                                "y": 0
+                        }
+                    }
+                },
+                "special": {
+                    "nspecial": {
+                        "frameTime": [ 10, 10, 10, 10 ],
+                        "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                        },
+                        "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                        },
+                        "offset": {
+                                "x": 0,
+                                "y": 0
+                        }
+                    },
+                    "sspecial": {
+                        "frameTime": [ 10, 10, 10, 10 ],
+                        "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                        },
+                        "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                        },
+                        "offset": {
+                                "x": 0,
+                                "y": 0
+                        }
+                    },
+                    "dspecial": {
+                        "frameTime": [ 10, 10, 10, 10 ],
+                        "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                        },
+                        "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                        },
+                        "offset": {
+                                "x": 0,
+                                "y": 0
+                        }
+                    },
+                    "uspecial": {
+                        "frameTime": [ 10, 10, 10, 10 ],
+                        "spriteSheetStart": {
+                                "x": 0,
+                                "y": 0
+                        },
+                        "spriteSheetEnd": {
+                                "x": 3,
+                                "y": 0
+                        },
+                        "offset": {
+                                "x": 0,
+                                "y": 0
+                        }
+                    }
+                }
+            },
+            "attacks": {
+                "light": {
+                    "nlight": {
+                        "hitboxes": [
+                            {
+                                "width": 20,
+                                "height": 10,
+                                "offset": {
+                                    "x": 32,
+                                    "y": 10
+                                },
+                                "damage": 10,
+                                "knockback": {
+                                    "x": 10,
+                                    "y": 10
+                                },
+                                "hold": 10,
+                                "hitstun": 10,
+                                "canMove": false
+                            },
+                            {
+                                "width": 30,
+                                "height": 0,
+                                "offset": {
+                                    "x": 32,
+                                    "y": 0
+                                },
+                                "damage": 0,
+                                "knockback": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "hold": 2,
+                                "hitstun": 0,
+                                "canMove": false
+                            },
+                            {
+                                "width": 20,
+                                "height": 10,
+                                "offset": {
+                                    "x": 32,
+                                    "y": 10
+                                },
+                                "damage": 10,
+                                "knockback": {
+                                    "x": 10,
+                                    "y": 10
+                                },
+                                "hold": 10,
+                                "hitstun": 10,
+                                "canMove": false
+                            },
+                            {
+                                "width": 30,
+                                "height": 0,
+                                "offset": {
+                                    "x": 32,
+                                    "y": 0
+                                },
+                                "damage": 0,
+                                "knockback": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "hold": 2,
+                                "hitstun": 0,
+                                "canMove": false
+                            },
+                            {
+                                "width": 20,
+                                "height": 10,
+                                "offset": {
+                                    "x": 40,
+                                    "y": 10
+                                },
+                                "damage": 10,
+                                "knockback": {
+                                    "x": 10,
+                                    "y": 10
+                                },
+                                "hold": 10,
+                                "hitstun": 10,
+                                "canMove": false
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

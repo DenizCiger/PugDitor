@@ -1,0 +1,40 @@
+body, html {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #14171c;
+    overflow: hidden;
+    color: white;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #1e2329;
+    border: 1px solid #b7b8b9;
+    max-width: 100%;
+    height: auto;
+    max-width: 100vw;
+    width: 90vw;
+    image-rendering: pixelated;
+}
+
+option {
+    background-color: #1e2329;
+    color: white;
+    border: 1px solid #b7b8b9;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#characters, #type, #categories, #items, #data {
+    display: flex; /* Use Flexbox for the children */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    gap: 20px; /* Add some space between the children */
+}
